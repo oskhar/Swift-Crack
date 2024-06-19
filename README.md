@@ -16,3 +16,14 @@ Python mungkin tidak dapat menampung file wordlist yang terlalu besar sampai ber
 ~$ g++ main.cpp
 ~$ ./a.out
 ```
+
+### Wordlist masih terlalu besar
+
+Saya terpikirkan untuk membagi pembuatan file menjadi beberapa bagian agar wordlist bisa digunakan oleh cracker dengan lebih effesien dengan membagi file output(wordlist yang sudak di filter) menjadi beberapa bagian. sehingga proses bruteforce bisa menggunakan banyak thread atau worker sekaligus.
+
+Kamu hanya perlu memasukan nama file wordlist yang ingin diproses dan memasuka berapa banyak file yang ingin dicetak sebagai output, nanti program yang akan membagi setiap bagian output file secara rata.
+
+```
+~$ g++ main-deep.cpp
+~$ ./a.out
+```
