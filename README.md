@@ -1,6 +1,6 @@
-# Secure List
+# Swift Crack
 
-Secure List provides essential tools for efficiently generating and managing wordlists, specifically designed for hacking and security applications. It features Python scripts for smaller wordlists and optimized C++ programs for handling large datasets. The repository includes functionalities for splitting large wordlists and generating targeted lists based on specific keywords, enhancing efficiency in password cracking and security testing.
+Swift Crack provides essential tools for efficiently generating and managing wordlists, specifically designed for hacking and security applications. It features Python scripts for smaller wordlists and optimized C++ programs for handling large datasets. The repository includes functionalities for splitting large wordlists and generating targeted lists based on specific keywords, enhancing efficiency in password cracking and security testing.
 
 ### Overview
 
