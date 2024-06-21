@@ -10,15 +10,15 @@ This repository offers tools for generating and managing wordlists efficiently, 
 
 The `main.py` script is the central hub for all wordlist management operations. It provides a user-friendly interface to choose different functionalities based on your needs:
 
-1. **Filter Wordlist for Basic WiFi Hacking (Python)**
-2. **Filter Wordlist for Advanced WiFi Hacking (C++)**
-3. **Filter Wordlist with Deep Multi-Threading (C++)**
-4. **Generate Wordlist with Specific Keywords (Python)**
-5. **Exit**
+1. Filter Wordlist for Basic WiFi Hacking (Python)
+2. Filter Wordlist for Advanced WiFi Hacking (C++)
+3. Filter Wordlist with Deep Multi-Threading (C++)
+4. Generate Wordlist with Specific Keywords (Python)
+5. Exit
 
 ### Features and Usage Instructions
 
-1. **Filter Wordlist for Basic WiFi Hacking (Python)**
+1. Filter Wordlist for Basic WiFi Hacking (Python)
 
    Use Python's native capabilities to filter wordlists from a provided file. This approach is suitable for moderate-sized wordlists.
 
@@ -30,7 +30,7 @@ The `main.py` script is the central hub for all wordlist management operations. 
 
    Select option `[1]` from the menu and follow the instructions.
 
-2. **Filter Wordlist for Advanced WiFi Hacking (C++)**
+2. Filter Wordlist for Advanced WiFi Hacking (C++)
 
    When dealing with large wordlists (exceeding 1GB), switch to C++ for enhanced memory management and processing speed.
 
@@ -42,7 +42,7 @@ The `main.py` script is the central hub for all wordlist management operations. 
 
    Select option `[2]` from the menu. The program will check if the C++ source file is compiled and will compile it if necessary before execution.
 
-3. **Filter Wordlist with Deep Multi-Threading (C++)**
+3. Filter Wordlist with Deep Multi-Threading (C++)
 
    Splitting massive wordlists into smaller, manageable files enhances performance during brute-force attacks, enabling efficient multi-threading.
 
@@ -54,7 +54,7 @@ The `main.py` script is the central hub for all wordlist management operations. 
 
    Select option `[3]` from the menu. The program will check if the C++ source file is compiled and will compile it if necessary before execution.
 
-4. **Generate Wordlist with Specific Keywords (Python)**
+4. Generate Wordlist with Specific Keywords (Python)
 
    Create specialized wordlists by extracting keywords relevant to specific targets, optimizing cracking efforts.
 
@@ -66,7 +66,7 @@ The `main.py` script is the central hub for all wordlist management operations. 
 
    Select option `[4]` from the menu and follow the instructions.
 
-5. **Exit**
+5. Exit
 
    Exit the program.
 
