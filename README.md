@@ -4,57 +4,71 @@ Swift Crack provides essential tools for efficiently generating and managing wor
 
 ### Overview
 
-This repository offers tools for generating and managing wordlists efficiently, tailored for various hacking and security applications.
+This repository offers tools for generating and managing wordlists efficiently, tailored for various hacking and security applications. All functionalities are accessible through a single Python script (`main.py`) for ease of use.
 
-### Python Tool (`filtering.py`)
+### Main Tool (`main.py`)
 
-Use Python's native capabilities to generate wordlists from a provided file. This approach is suitable for moderate-sized wordlists.
+The `main.py` script is the central hub for all wordlist management operations. It provides a user-friendly interface to choose different functionalities based on your needs:
 
-### C++ Optimization (`filtering.cpp`)
+1. **Filter Wordlist for Basic WiFi Hacking (Python)**
+2. **Filter Wordlist for Advanced WiFi Hacking (C++)**
+3. **Filter Wordlist with Deep Multi-Threading (C++)**
+4. **Generate Wordlist with Specific Keywords (Python)**
+5. **Exit**
 
-When dealing with large wordlists (exceeding 1GB), switch to C++ for enhanced memory management and processing speed.
+### Features and Usage Instructions
 
-### Managing Large Wordlists (`deep-filtering.cpp`)
+1. **Filter Wordlist for Basic WiFi Hacking (Python)**
 
-Splitting massive wordlists into smaller, manageable files enhances performance during brute-force attacks, enabling efficient multi-threading.
+   Use Python's native capabilities to filter wordlists from a provided file. This approach is suitable for moderate-sized wordlists.
 
-### Targeted Keyword Generation (`chiper-word.py`)
-
-Create specialized wordlists by extracting keywords relevant to specific targets, optimizing cracking efforts.
-
-### Usage Instructions
-
-1. **Python Execution**
-
-   - Run `filtering.py` and input your wordlist filename.
+   To use this feature:
 
    ```
-   ~$ python3 filtering.py
+   ~$ python3 main.py
    ```
 
-2. **C++ Compilation and Execution**
+   Select option `[1]` from the menu and follow the instructions.
 
-   - Compile `filtering.cpp` and execute it for handling large wordlists.
+2. **Filter Wordlist for Advanced WiFi Hacking (C++)**
 
-   ```
-   ~$ g++ filtering.cpp
-   ~$ ./a.out
-   ```
+   When dealing with large wordlists (exceeding 1GB), switch to C++ for enhanced memory management and processing speed.
 
-3. **Splitting Wordlists**
-
-   - Use `deep-filtering.cpp` to split large wordlists into multiple files for efficient processing.
+   To use this feature:
 
    ```
-   ~$ g++ deep-filtering.cpp
-   ~$ ./a.out
+   ~$ python3 main.py
    ```
 
-4. **Generating Targeted Wordlists**
-   - Utilize `chiper-word.py` to create wordlists tailored to specific targets based on associated keywords.
+   Select option `[2]` from the menu. The program will check if the C++ source file is compiled and will compile it if necessary before execution.
+
+3. **Filter Wordlist with Deep Multi-Threading (C++)**
+
+   Splitting massive wordlists into smaller, manageable files enhances performance during brute-force attacks, enabling efficient multi-threading.
+
+   To use this feature:
+
    ```
-   ~$ python3 chiper-word.py
+   ~$ python3 main.py
    ```
+
+   Select option `[3]` from the menu. The program will check if the C++ source file is compiled and will compile it if necessary before execution.
+
+4. **Generate Wordlist with Specific Keywords (Python)**
+
+   Create specialized wordlists by extracting keywords relevant to specific targets, optimizing cracking efforts.
+
+   To use this feature:
+
+   ```
+   ~$ python3 main.py
+   ```
+
+   Select option `[4]` from the menu and follow the instructions.
+
+5. **Exit**
+
+   Exit the program.
 
 ### Notes
 
