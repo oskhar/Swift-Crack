@@ -6,15 +6,15 @@ Swift Crack provides essential tools for efficiently generating and managing wor
 
 This repository offers tools for generating and managing wordlists efficiently, tailored for various hacking and security applications.
 
-### Python Tool (`main.py`)
+### Python Tool (`filtering.py`)
 
 Use Python's native capabilities to generate wordlists from a provided file. This approach is suitable for moderate-sized wordlists.
 
-### C++ Optimization (`main.cpp`)
+### C++ Optimization (`filtering.cpp`)
 
 When dealing with large wordlists (exceeding 1GB), switch to C++ for enhanced memory management and processing speed.
 
-### Managing Large Wordlists (`main-deep.cpp`)
+### Managing Large Wordlists (`deep-filtering.cpp`)
 
 Splitting massive wordlists into smaller, manageable files enhances performance during brute-force attacks, enabling efficient multi-threading.
 
@@ -26,27 +26,27 @@ Create specialized wordlists by extracting keywords relevant to specific targets
 
 1. **Python Execution**
 
-   - Run `main.py` and input your wordlist filename.
+   - Run `filtering.py` and input your wordlist filename.
 
    ```
-   ~$ python3 main.py
+   ~$ python3 filtering.py
    ```
 
 2. **C++ Compilation and Execution**
 
-   - Compile `main.cpp` and execute it for handling large wordlists.
+   - Compile `filtering.cpp` and execute it for handling large wordlists.
 
    ```
-   ~$ g++ main.cpp
+   ~$ g++ filtering.cpp
    ~$ ./a.out
    ```
 
 3. **Splitting Wordlists**
 
-   - Use `main-deep.cpp` to split large wordlists into multiple files for efficient processing.
+   - Use `deep-filtering.cpp` to split large wordlists into multiple files for efficient processing.
 
    ```
-   ~$ g++ main-deep.cpp
+   ~$ g++ deep-filtering.cpp
    ~$ ./a.out
    ```
 
