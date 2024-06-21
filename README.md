@@ -1,29 +1,63 @@
-## Penggunaan
+# Secure List
 
-### Tentu saja Python
+Secure List provides essential tools for efficiently generating and managing wordlists, specifically designed for hacking and security applications. It features Python scripts for smaller wordlists and optimized C++ programs for handling large datasets. The repository includes functionalities for splitting large wordlists and generating targeted lists based on specific keywords, enhancing efficiency in password cracking and security testing.
 
-Seluruhnya hanya menggunakan libary bawaan python, jadi kamu hanya perlu menjalankan program `main.py`, dan langsung memasukan nama file wordlist milikmu untuk diproses
+### Overview
 
-```
-~$ python3 main.py
-```
+This repository offers tools for generating and managing wordlists efficiently, tailored for various hacking and security applications.
 
-### Kenapa C++ ??
+### Python Tool (`main.py`)
 
-Python mungkin tidak dapat menampung file wordlist yang terlalu besar sampai lebih dari 1 Giga Byte. Saya telah mencoba melakukannya pada wordlist milik saya yang berukuran 3.7GB dan hasilnya force error. C++ mungkin bisa menjadi solusi karena dapat melakukan management memory dan resource dengan lebih mendalam
+Use Python's native capabilities to generate wordlists from a provided file. This approach is suitable for moderate-sized wordlists.
 
-```
-~$ g++ main.cpp
-~$ ./a.out
-```
+### C++ Optimization (`main.cpp`)
 
-### Wordlist masih terlalu besar
+When dealing with large wordlists (exceeding 1GB), switch to C++ for enhanced memory management and processing speed.
 
-Saya terpikirkan untuk membagi pembuatan file menjadi beberapa bagian agar wordlist bisa digunakan oleh cracker dengan lebih effesien dengan membagi file output(wordlist yang sudak di filter) menjadi beberapa bagian. sehingga proses bruteforce bisa menggunakan banyak thread atau worker sekaligus.
+### Managing Large Wordlists (`main-deep.cpp`)
 
-Kamu hanya perlu memasukan nama file wordlist yang ingin diproses dan memasuka berapa banyak file yang ingin dicetak sebagai output, nanti program yang akan membagi setiap bagian output file secara rata.
+Splitting massive wordlists into smaller, manageable files enhances performance during brute-force attacks, enabling efficient multi-threading.
 
-```
-~$ g++ main-deep.cpp
-~$ ./a.out
-```
+### Targeted Keyword Generation (`chiper-word.py`)
+
+Create specialized wordlists by extracting keywords relevant to specific targets, optimizing cracking efforts.
+
+### Usage Instructions
+
+1. **Python Execution**
+
+   - Run `main.py` and input your wordlist filename.
+
+   ```
+   ~$ python3 main.py
+   ```
+
+2. **C++ Compilation and Execution**
+
+   - Compile `main.cpp` and execute it for handling large wordlists.
+
+   ```
+   ~$ g++ main.cpp
+   ~$ ./a.out
+   ```
+
+3. **Splitting Wordlists**
+
+   - Use `main-deep.cpp` to split large wordlists into multiple files for efficient processing.
+
+   ```
+   ~$ g++ main-deep.cpp
+   ~$ ./a.out
+   ```
+
+4. **Generating Targeted Wordlists**
+   - Utilize `chiper-word.py` to create wordlists tailored to specific targets based on associated keywords.
+   ```
+   ~$ python3 chiper-word.py
+   ```
+
+### Notes
+
+- Ensure Python and C++ environments are properly configured.
+- Adjust settings and filenames as per your specific requirements.
+- Monitor system resources when handling large datasets for optimal performance.
