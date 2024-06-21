@@ -1,7 +1,9 @@
 # Ignore compiled C++ files
+filtering
 filtering.out
-deep-filtering.out
 filtering.exe
+deep-filtering.out
+deep-filtering
 deep-filtering.exe
 
 # Ignore object files
